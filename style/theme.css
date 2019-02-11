@@ -1,0 +1,197 @@
+body, html {
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Helvetica Neue', helvetica, sans-serif;
+    overflow: hidden;
+    background-color:rgb(255,255,255);
+  }
+/*Scrolling*/
+  .skrllr-wrapper {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .skrllr-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    height: 100% !important;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .main-menu {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+  }
+  
+  .pagination { list-style: none; }
+  
+  .pagination li {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    margin-bottom: 30px;
+    margin-right:15px;
+  }
+  
+  .pagination li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+   
+    background-color: rgb(0,123,255);
+    border-radius: 50%;
+    
+  }
+  
+  .pagination li a:hover,  .pagination li a.active {
+    background-color: rgb(1, 15, 139);
+  }
+/*Scrolling End*/
+
+/* Top Menu*/
+ #header{
+     width:100%;
+     height: 25%;
+ }
+
+
+ ol#settings {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+
+  ol#settings > li {
+    float: left;
+  }
+  ol#settings > li a {
+      display: block;
+      color: white;
+      text-align: center;
+      font-size:2.5vh;
+      margin: 0.5em 1em 0em 1em;
+      text-decoration: none;
+      padding:1em 1em 1em 1em;
+      color:black;
+    }
+    ol#settings > ul{
+        display: block;
+        color: white;
+        text-align: center;
+        font-size:2.5vh;
+        margin: 0.5em 1em 0em 1em;
+        text-decoration: none;
+        padding:1em 1em 1em 1em;
+        color:black;
+    }
+    
+
+  ol#settings > li a:hover:not(.notActive) {
+    background-color:rgb(0,123,255);
+    color:white;
+  }
+  
+   .notActive {
+    color: black;
+    text-align: center;
+    font-size:2.5vh;
+    padding: 1em 2em 1em 2em;
+  }
+
+  li#unitsHover:hover ul{
+    max-height:1000px;
+    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+  }
+  ol#settings > li > ul{
+    position:fixed;
+    z-index:1;
+    max-height:0;
+    overflow:hidden;
+    -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+    -webkit-transform-origin:50% 0;
+    -webkit-transition:350ms;
+    -moz-transition:350ms;
+    -o-transition:350ms;
+    transition:350ms;
+  }
+ 
+  ol#settings > li > ul>li{
+    padding-top:1em;
+    list-style-type: none;
+    }
+    ol#settings > li > ul>li>button{
+        
+        width:12vh;
+        height:4vh;
+    }
+  /* Top Menu End*/
+
+  h1#intro{
+      font-size:3em;
+      text-align: center;
+      color:black;
+  }
+
+  .introImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+  }
+  .mouseImage{
+    position: absolute;
+    display: block;
+    left:50%;
+    bottom:15%;
+    width:3%; 
+  }
+
+ .sectionHeader{
+    text-align: center;
+
+    font-size:5vh;
+ }
+
+ #inputStyle{
+    width:15%;
+    height: 3em;
+    font-size:2.5vh;
+ }
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.container > p{
+      margin-left:10px;
+      font-family:"impact";
+      font-size:4vh;
+      border: 6px solid;
+      border-color:rgb(0,123,255);
+      padding:0.4em;
+  }
+
+
+

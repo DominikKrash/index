@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>demo</title>
+        <link rel="stylesheet" type="text/css" href="../style/theme.css">
+        <script src="../scripts/skrllr.es5.js"></script>
+        <script src="../scripts/skrllr.js"></script>
+        <script src="../scripts/skrllr.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+            <ol id="settings">
+                    <li><h1 class="notActive">Cranes Guide</h1></li>
+                    <li id="unitsHover"><a>Jednostka</a>
+                        <ul>
+                            <li><button onclick="changeWeightUnit('Ton','M')">Metryczna</button></li>
+                            <li><button onclick="changeWeightUnit('Lbs','Ft')">Imperialna</button></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Język</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WE SUPPORT</a></li>
+                    <li><a href="">REPORT BUG</a></li>
+            </ol>
+        <div class="wrapper">
+            <main>
+              <section>
+                <img class="introImage" src="../resources/images/crane.svg"/>
+                <h1 id="intro">Lets find out the best crane</h1>
+                <img class="mouseImage" src="../resources/images/mouse1.svg"/>
+              </section>
+
+              <section>
+                <h1 class="sectionHeader">Daj nam<br>ładunek</h1>
+                <div class="container">
+                    <input id="inputStyle" type="number" min="0" required>
+                    <p id="unitParagraph">Ton</p>
+                </div>
+                <img class="mouseImage" src="../resources/images/mouse1.svg"/>
+              </section>
+
+              <section>
+                <h1 class="sectionHeader">Jaki jest promień?</h1>
+                <div class="container">
+                        <input id="inputStyle" type="number" min="0" required>
+                        <p id="radiusParagraph">M</p>
+                </div>
+                <img class="mouseImage" src="../resources/images/mouse1.svg"/>
+              </section>
+
+              <section>
+                <h1 class="sectionHeader">Podaj wysokość</h1>
+                <div class="container">
+                        <input id="inputStyle" type="number" min="0" required>
+                        <p id="heightParagraph">M</p>
+                    </div>
+                    <img class="mouseImage" src="../resources/images/mouse1.svg"/>
+              </section>
+              <section>
+                <h1>Section 05</h1>
+              </section>
+            </main>
+          </div>
+          
+          <nav class="main-menu">
+            <ul class="pagination">
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+            </ul>
+          </nav>
+
+
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
